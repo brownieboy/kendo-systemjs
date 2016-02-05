@@ -1,0 +1,96 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'systemjs-babel-build' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.6
+4 verbose install initial load of /Users/michaelbrown/Documents/Aptana Studio 3 Workspace/kendo-systemjs/package.json
+5 warn package.json kendo-requirejs@0.1.1 No description
+6 warn package.json kendo-requirejs@0.1.1 No repository field.
+7 warn package.json kendo-requirejs@0.1.1 No README data
+8 verbose installManyTop reading scoped package data from /Users/michaelbrown/Documents/Aptana Studio 3 Workspace/kendo-systemjs/node_modules/babel/package.json
+9 verbose installManyTop reading scoped package data from /Users/michaelbrown/Documents/Aptana Studio 3 Workspace/kendo-systemjs/node_modules/babel-core/package.json
+10 verbose installManyTop reading scoped package data from /Users/michaelbrown/Documents/Aptana Studio 3 Workspace/kendo-systemjs/node_modules/babel-plugin-transform-es2015-modules-systemjs/package.json
+11 verbose installManyTop reading scoped package data from /Users/michaelbrown/Documents/Aptana Studio 3 Workspace/kendo-systemjs/node_modules/kendo-ui-core/package.json
+12 verbose installManyTop reading scoped package data from /Users/michaelbrown/Documents/Aptana Studio 3 Workspace/kendo-systemjs/node_modules/systemjs/package.json
+13 verbose installManyTop reading scoped package data from /Users/michaelbrown/Documents/Aptana Studio 3 Workspace/kendo-systemjs/node_modules/systemjs-plugin-babel/package.json
+14 info package.json kendo-ui-core@1.0.2 license should be a valid SPDX license expression
+15 info package.json systemjs-plugin-babel@0.0.2 No repository field.
+16 info package.json systemjs-plugin-babel@0.0.2 No license field.
+17 verbose readDependencies loading dependencies from /Users/michaelbrown/Documents/Aptana Studio 3 Workspace/kendo-systemjs/package.json
+18 silly cache add args [ 'systemjs-babel-build', null ]
+19 verbose cache add spec systemjs-babel-build
+20 silly cache add parsed spec Result {
+20 silly cache add   raw: 'systemjs-babel-build',
+20 silly cache add   scope: null,
+20 silly cache add   name: 'systemjs-babel-build',
+20 silly cache add   rawSpec: '',
+20 silly cache add   spec: 'latest',
+20 silly cache add   type: 'tag' }
+21 silly addNamed systemjs-babel-build@latest
+22 verbose addNamed "latest" is being treated as a dist-tag for systemjs-babel-build
+23 info addNameTag [ 'systemjs-babel-build', 'latest' ]
+24 silly mapToRegistry name systemjs-babel-build
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry uri https://registry.npmjs.org/systemjs-babel-build
+28 verbose addNameTag registry:https://registry.npmjs.org/systemjs-babel-build not in flight; fetching
+29 verbose request uri https://registry.npmjs.org/systemjs-babel-build
+30 verbose request no auth needed
+31 info attempt registry request try #1 at 10:24:13 PM
+32 verbose request using bearer token for auth
+33 verbose request id a443fe5dac7a99b3
+34 http request GET https://registry.npmjs.org/systemjs-babel-build
+35 http 404 https://registry.npmjs.org/systemjs-babel-build
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=0',
+36 verbose headers   'content-length': '2',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Fri, 05 Feb 2016 11:24:13 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-syd1621-SYD',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1454671453.040858,VS0,VE909' }
+37 silly get cb [ 404,
+37 silly get   { 'content-type': 'application/json',
+37 silly get     'cache-control': 'max-age=0',
+37 silly get     'content-length': '2',
+37 silly get     'accept-ranges': 'bytes',
+37 silly get     date: 'Fri, 05 Feb 2016 11:24:13 GMT',
+37 silly get     via: '1.1 varnish',
+37 silly get     connection: 'keep-alive',
+37 silly get     'x-served-by': 'cache-syd1621-SYD',
+37 silly get     'x-cache': 'MISS',
+37 silly get     'x-cache-hits': '0',
+37 silly get     'x-timer': 'S1454671453.040858,VS0,VE909' } ]
+38 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/systemjs-babel-build
+38 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+38 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+38 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+38 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+38 verbose stack     at emitTwo (events.js:87:13)
+38 verbose stack     at Request.emit (events.js:172:7)
+38 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+38 verbose stack     at emitOne (events.js:82:20)
+38 verbose stack     at Request.emit (events.js:169:7)
+38 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+39 verbose statusCode 404
+40 verbose pkgid systemjs-babel-build
+41 verbose cwd /Users/michaelbrown/Documents/Aptana Studio 3 Workspace/kendo-systemjs
+42 error Darwin 15.2.0
+43 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "systemjs-babel-build"
+44 error node v4.2.6
+45 error npm  v2.14.12
+46 error code E404
+47 error 404 Registry returned 404 for GET on https://registry.npmjs.org/systemjs-babel-build
+47 error 404
+47 error 404 'systemjs-babel-build' is not in the npm registry.
+47 error 404 You should bug the author to publish it (or use the name yourself!)
+47 error 404 It was specified as a dependency of 'kendo-requirejs'
+47 error 404
+47 error 404 Note that you can also install from a
+47 error 404 tarball, folder, http url, or git url.
+48 verbose exit [ 1, true ]

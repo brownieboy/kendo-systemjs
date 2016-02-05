@@ -1,0 +1,21 @@
+{
+  "name": "kendo-requirejs",
+  "version": "0.1.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kendo-ui-core": "^1.0.2",
+    "systemjs": "^0.19.20"
+  },
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-core": "^6.4.5",
+    "babel-plugin-transform-es2015-modules-systemjs": "^6.4.0"
+  }
+}

@@ -3,18 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>SystemJS test</title>
+    <link rel="stylesheet" href="../node_modules/kendo-ui-core/dist/styles/web/kendo.common.core.min.css">
+    <link rel="stylesheet" href="../node_modules/kendo-ui-core/dist/styles/web/kendo.rtl.css">
+    <link rel="stylesheet" href="../node_modules/kendo-ui-core/dist/styles/web/kendo.default.min.css">
 </head>
 
 <body>
-    <!-- <script src="../node_modules/babel-core/lib/api/browser.js"></script> -->
+    <input id="testpicker" />
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/systemjs/dist/system.js"></script>
     <script>
     System.config({
+        packages: {
+            "../node_modules/kendo-ui-core/src": {
+                defaultExtension: 'js'
+            }
+        },
+
         transpiler: "plugin-babel",
         map: {
             "plugin-babel": "../node_modules/systemjs-plugin-babel/plugin-babel.js",
             'systemjs-babel-build': './systemjs-babel-browser.js'
+        },
+        paths: {
+            'kendo.*': "../node_modules/kendo-ui-core/src/kendo.*.js"
         }
     });
     System.import('./js/app.js');

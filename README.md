@@ -22,7 +22,7 @@ I think that this might be somehow related to to Kendo's hard dependency on jQue
 
 ###Environment
 The code in this repostiory uses Node/npm to install its dependencies.  Setup instructions are:
-1. Install ![Node/npm](https://nodejs.org/en/download/) if you don't have it already.  For Windows, you'll also need a bash shell, which you get if you install ![Github for Windows] (https://desktop.github.com/) (make sure you tick the box to install the shell).
+1. Install [Node/npm](https://nodejs.org/en/download/) if you don't have it already.  For Windows, you'll also need a bash shell, which you get if you install [Github for Windows] (https://desktop.github.com/) (make sure you tick the box to install the shell).
 2. In a bash window, git clone this repository.
 3. cd to the repository folder, then issue `npm install` to download the dependencies.
 4. Open the file src/index.html in your browser from a local web server, e.g. http://localhost:8082/kendo-systemjs/src/index.html.  I use SublimeServer for SublimeText, but there's a bazillion others you can use.
@@ -30,7 +30,7 @@ The code in this repostiory uses Node/npm to install its dependencies.  Setup in
 ###Further Notes
 My code uses Babel to transpile ES6 modules into ES5.  I've tried to follow the Telerik documentation at http://docs.telerik.com/kendo-ui/third-party/systemjs
 
-The problem also occurs if I use Webpack to transpile in a build step.  (SystemJS transpiles in the browser.)  I've set up a ![separate Github repository to test this problem with Webpack](https://github.com/brownieboy/kendo-webpack-bugtest)
+The problem also occurs if I use Webpack to transpile in a build step.  (SystemJS transpiles in the browser.)  I've set up a [separate Github repository to test this problem with Webpack](https://github.com/brownieboy/kendo-webpack-bugtest)
 
 
 

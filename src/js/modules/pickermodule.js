@@ -1,4 +1,8 @@
+import jq from 'jquery';
 import 'kendo.datepicker';
+
+window.jQuery = jq;
+window.$ = window.jQuery;
 
 class DatePickerField {
 	constructor(configObj) {

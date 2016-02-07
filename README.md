@@ -15,4 +15,4 @@ Scroll the screen down just a little, and the control's pop-up becomes detached 
 
 
 ###Possible Causes
-This is, I think, something to do with Kendo's hard dependency on jQuery.
+This is, I think, something to do with Kendo's hard dependency on jQuery.  Specifically, how Kendo expects jQuery to be available as global object, attached to the browser's own global, i.e. the *window* object.

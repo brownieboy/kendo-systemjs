@@ -7,14 +7,33 @@ The bug is that when using KendoUI widgets with ES6 modules, those widgets' pop-
 The bug occurs on IE 11 and Firefox.  It does not happen on Chrome.
 
 
-With IE scrolled to the top of the screen the control works:
+With IE scrolled to the top of the screen the control works correctly, with the calendar pop-up attached to the control:
 ![Kendo control works](http://www.users.on.net/~mikeandgeminoz/code/images/kendo_es6_scrollingbug1.png "Kendo control works")
 
-Scroll the screen down just a little, and the control's pop-up becomes detached from the control.
+Scroll the screen down just a little, and the control's pop-up becomes detached from its control:
 ![Kendo control doesn't work](http://www.users.on.net/~mikeandgeminoz/code/images/kendo_es6_scrollingbug2.png "Kendo control doesn't work")
 
 
 ###Possible Causes
 It looks to me that Kendo is not even picking up that the window has scrolled at all, and is placing its pop-up in the same place it would if the browser was still scrolled to the top.
 
-This is, I think, something to do with Kendo's hard dependency on jQuery.  Specifically, how Kendo expects jQuery to be available as global object, attached to the browser's own global, i.e. the _window_ object.
+I think that this might be somehow related to to Kendo's hard dependency on jQuery.  Specifically, how Kendo expects jQuery to be available as global object, attached to the browser's own global, i.e. the _window_ object.  My guess is that because of that, Kendo is not properly picking up the scrolling event.
+
+
+###Environment
+The code in this repostiory uses Node/npm to install its dependencies.  Setup instructions are:
+1. Install ![Node/npm](https://nodejs.org/en/download/) if you don't have it already.  For Windows, you'll also need a bash shell, which you get if you install ![Github for Windows] (https://desktop.github.com/) (make sure you tick the box to install the shell).
+2. In a bash window, git clone this repository.
+3. cd to the repository folder, then issue `npm install` to download the dependencies.
+4. Open the file src/index.html in your browser from a local web server, e.g. http://localhost:8082/kendo-systemjs/src/index.html.  I use SublimeServer for SublimeText, but there's a bazillion others you can use.
+
+###Further Notes
+My code uses Babel to transpile ES6 modules into ES5.  I've tried to follow the Telerik documentation at http://docs.telerik.com/kendo-ui/third-party/systemjs
+
+The problem also occurs if I use Webpack to transpile in a build step.  (SystemJS transpiles in the browser.)  I've set up a ![separate Github repository to test this problem with Webpack](https://github.com/brownieboy/kendo-webpack-bugtest)
+
+
+
+
+
+

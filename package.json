@@ -17,6 +17,7 @@
   "devDependencies": {
     "babel": "^6.3.26",
     "babel-core": "^6.4.5",
-    "babel-plugin-transform-es2015-modules-systemjs": "^6.4.0"
+    "babel-plugin-transform-es2015-modules-systemjs": "^6.4.0",
+    "systemjs-plugin-babel": "0.0.2"
   }
 }

@@ -1,16 +1,27 @@
-import jq from 'jquery';
-import 'kendo.datepicker';
+// import jq from 'jquery';
+// import 'kendo.datepicker';
 
-window.jQuery = jq;
-window.$ = window.jQuery;
+// window.jQuery = jq;
+// window.$ = window.jQuery;
 
-class DatePickerField {
-	constructor(configObj) {
-		console.log("constructor called");
+// class DatePickerField {
+// 	constructor(configObj) {
+// 		console.log("constructor called");
 
-		$("#testpicker").kendoDatePicker({});
-		console.log("date picker called");
-	}
+// 		$("#testpicker").kendoDatePicker({});
+// 		console.log("date picker called");
+// 	}
+// }
+
+// export default DatePickerField;
+
+var jQuery = require('jquery');
+// var $ = require('jquery');
+require('kendo.datepicker');
+
+function setupDatePicker() {
+    $("#testpicker").kendoDatePicker({});
+    console.log("date picker called");
 }
 
-export default DatePickerField;
+module.exports = setupDatePicker;

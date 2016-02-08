@@ -26,7 +26,7 @@ The code in this repostiory uses Node/npm to install its dependencies.  Setup in
 1. Install [Node/npm](https://nodejs.org/en/download/) if you don't have it already.  For Windows, you'll also need a bash shell, which you get if you install [Github for Windows] (https://desktop.github.com/) (make sure you tick the box to install the shell).
 1. In a bash window, git clone this repository.
 1. cd to the repository folder, then issue `npm install` to download the dependencies.
-1. Open the file src/index.html in your browser from a local web server, e.g. http://localhost:8082/kendo-systemjs/src/index.html.  I use SublimeServer for SublimeText, but there's a bazillion others you can use.
+1. Open the file src/index.html in your browser from a local web server, e.g. http://localhost:8082/kendo-systemjs/src/index.html.  I use SublimeServer for SublimeText as my local web server, but there's a bazillion others you can use.
 
 ###Further Notes
 My code uses Babel to transpile ES6 modules into ES5.  I've tried to follow the Telerik documentation at http://docs.telerik.com/kendo-ui/third-party/systemjs, although that uses CommonJS style requires rather than ES6/Babel.  Is that the problem, maybe?

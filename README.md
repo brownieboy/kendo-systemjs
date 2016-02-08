@@ -26,7 +26,7 @@ The code in this repository uses Node/npm to install its dependencies.  Setup in
 1. Install [Node/npm](https://nodejs.org/en/download/) if you don't have it already.  For Windows, you'll also need a bash shell, which you get if you install [Github for Windows] (https://desktop.github.com/) (make sure you tick the box to install the shell).
 1. In a bash window, git clone this repository.
 1. cd to the repository folder, then issue `npm install` to download the dependencies.
-1. Extract your Kendo-Pro files to a folder called "kendo-pro" in the root of your project.
+1. Extract your Kendo-Pro files to a folder called "kendo-pro" in the root of your project.  NB: KendoUI Pro is not free, but there is trial version available from Telerik at https://www.telerik.com/download-trial-file/v2/kendo-ui.  I used version 2016.1.112.commercial for my testing.
 1. Open the file src/index.html in your browser from a local web server, e.g. http://localhost:8082/kendo-systemjs/src/index.html.  I use SublimeServer for SublimeText as my local web server, but there's a bazillion others you can use.
 
 ###Further Notes

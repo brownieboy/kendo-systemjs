@@ -38,7 +38,7 @@ The problem also occurs if I use Webpack to transpile in a build step.  (SystemJ
 ###Update 08/03/2016 - Bug Found!
 This turned out to be a bug in the version of jQuery that I was using, version 2.20.  This is not a supported version of jQuery for Kendo, as it says on the [JavaScript Prerequisites page on Telerik's site](http://docs.telerik.com/kendo-ui/intro/installation/prerequisites), (slaps self in forehead for not reading this first!).
 
-Changing the version of jQuery from 2.1.0 back down to 2.1.4 solved the problem.
+Changing the version of jQuery from 2.2.0 back down to 2.1.4 solved the problem.
 
 
 
